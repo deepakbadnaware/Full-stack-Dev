@@ -1,13 +1,12 @@
-def plus_One(digits):
+def plus_one(digits):
+    length=len(digits)-1
+    for i in range(length,-1,-1):
+        if digits[i]+1!=10:
+            digits[i]+=1
+            return digits
+        digits[i]=0
+        if i==0:
+            return [1]+digits
+        
+print(plus_one([9]))
 
-    last=len(digits)-1
-    digits[last]+=1
-    if digits[last]==9:
-        return [1].append(digits)
-    else:
-        return digits
-    
-
-
-digits=[9]
-print(plus_One(digits))
