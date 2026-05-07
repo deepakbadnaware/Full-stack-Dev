@@ -1,0 +1,28 @@
+
+1. UNDERSTAND
+   - What's the input/output?
+   - What are constraints?
+   
+2. EXAMPLES
+   - Normal case
+   - Edge cases (empty, single element, all same)
+   - Edge case that breaks logic (ends with valid sequence)
+   
+3. THINK VARIABLES
+   - What do I need to track? (count, max)
+   - When do they update?
+   - When do they reset?
+   
+4. PSEUDOCODE
+   - Write in plain language first
+   
+5. CODE
+   - Translate pseudocode
+   
+6. DRY RUN
+   - Walk through with example
+   - Check edge cases
+   
+7. OPTIMIZE
+   - Can I do it in one pass? ✅ (You already did!)
+   - Is space O(1)? ✅ (Yes!)
