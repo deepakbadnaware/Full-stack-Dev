@@ -46,14 +46,46 @@
 # print(func(1))
 
 
-def reverseArray(nums,start,end):
-    if start>end:
-        return nums
-    nums[start],nums[end]=nums[end],nums[start]
-    return reverseArray(nums,start+1,end-1)
+# def reverseArray(nums,start,end):
+#     if start>end:
+#         return nums
+#     nums[start],nums[end]=nums[end],nums[start]
+#     return reverseArray(nums,start+1,end-1)
 
-nums=[5,7,3,2,6,1,5,9]
-print(reverseArray(nums,0,7))
+# nums=[5,7,3,2,6,1,5,9]
+# print(reverseArray(nums,0,7))
 
 
+# def isPalindrome(s):
+#     start=0
+#     end=len(s)-1    
+#     while start<end:
+#         if s[start]!=s[end]:
+#             return False
+#         else:
+#             start+=1
+#             end-=1
+#     return True
+
+
+# s="nitin"
+
+# print(isPalindrome(s))
+
+
+
+def isPelin(s,start,end):
+    
+    if start>=end:
+        return True
+    if s[start]!=s[end]:
+        return False
+    
+    return isPelin(s,start+1,end-1)
+
+
+
+s="niti"
+print(isPelin(s,0,len(s)-1))
+    
     
