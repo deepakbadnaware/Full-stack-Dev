@@ -14,9 +14,6 @@ yaha hum check karenge ki kabhi apna nums[j] < raha toh nums[miniindex se] toh a
 
 # accending order 
 nums =[5,2,6,3,4,5,6,4,1]
-
-
-
 for i in range(len(nums)):
     midx=i
     for j in range(i+1,len(nums)):
